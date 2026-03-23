@@ -333,8 +333,8 @@ export default function App() {
 
           <div className="top-grid">
             <div>
-              <label className="field-label">運行日</label>
-              <input
+              <Label className="field-label">運行日</Label>
+              <Input
                 type="date"
                 value={selectedDate}
                 onChange={(e) => {
@@ -345,7 +345,7 @@ export default function App() {
               />
             </div>
             <div>
-              <label className="field-label">便名</label>
+              <Label className="field-label">便名</Label>
               <div className="trip-picker">
                 <button type="button" className="icon-btn" onClick={() => moveTrip(-1)} disabled={currentTripIndex <= 0}>
                   <ChevronLeft size={18} />
